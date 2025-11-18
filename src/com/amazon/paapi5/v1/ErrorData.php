@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License").
  * You may not use this file except in compliance with the License.
@@ -150,9 +150,9 @@ class ErrorData implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values
@@ -251,7 +251,6 @@ class ErrorData implements ModelInterface, ArrayAccess
      *
      * @return boolean
      */
-    #[\ReturnTypeWillChange]
     public function offsetExists(mixed $offset): bool
     {
         return isset($this->container[$offset]);
@@ -264,7 +263,6 @@ class ErrorData implements ModelInterface, ArrayAccess
      *
      * @return mixed
      */
-    #[\ReturnTypeWillChange]
     public function offsetGet(mixed $offset): mixed
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
@@ -278,7 +276,6 @@ class ErrorData implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    #[\ReturnTypeWillChange]
     public function offsetSet(mixed $offset, mixed $value): void
     {
         if (is_null($offset)) {
@@ -295,7 +292,6 @@ class ErrorData implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    #[\ReturnTypeWillChange]
     public function offsetUnset(mixed $offset): void
     {
         unset($this->container[$offset]);
